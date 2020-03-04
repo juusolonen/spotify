@@ -10,7 +10,7 @@ Once installed, clone the repository and install its dependencies running:
 
 
 ## Running the examples
-In order to run the different examples, open the folder with the name of the flow you want to try out, and run its `app.js` file. For instance, to run the Authorization Code example do :
+In order to run the example, open the folder and run its `app.js` file. For instance, to run the Authorization Code example do :
 
     $ cd authorization_code
     $ node app.js
