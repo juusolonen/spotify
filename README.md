@@ -1,4 +1,4 @@
-#Installation
+## Installation
 
 
 These examples run on Node.js. On its website you can find instructions on how to install it. You can also follow this gist for a quick and easy way to install Node.js and npm.
