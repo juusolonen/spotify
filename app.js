@@ -104,11 +104,16 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
+     /*   console.log('http://localhost:4200/?' +
+        querystring.stringify({
+          access_token: access_token,
+          refresh_token: refresh_token
+        }))
+        */
 
 
 
-
-        res.redirect('http://localhost:4200/?' +
+        res.redirect('http://localhost:4000/?' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token

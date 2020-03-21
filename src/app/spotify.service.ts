@@ -18,9 +18,9 @@ export class SpotifyService {
 
   constructor(private http : HttpClient) {  }
 
-  getNewToken =  () => {
+  getNewToken = () : void => {
     this.http.get('http://localhost:8888/refresh_token', {params: {refresh_token: this.refresh_token}}).subscribe(data => {
-     
+      console.log(data)
       this.data = data;
     })
     this.access_token = this.data.access_token;
@@ -34,7 +34,7 @@ export class SpotifyService {
    }
 
    play =  () : void => {
-  
+    console.log(this.headers);
     this.http.put('https://api.spotify.com/v1/me/player/play', null, {headers:{'Authorization' : 'Bearer ' + this.access_token}}).subscribe((data : any) => {
     
 

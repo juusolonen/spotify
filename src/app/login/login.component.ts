@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router, public spotify: SpotifyService) { }
 
   ngOnInit() {
-
+    console.log(this.route.snapshot.queryParams)
     this.route.queryParamMap.subscribe(queryParams => {
       this.spotify.access_token = queryParams.get("access_token");  
       this.spotify.refresh_token = queryParams.get("refresh_token");  
