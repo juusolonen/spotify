@@ -1,4 +1,8 @@
-# Angular Universal + Node Back-end
+# Spotify player controls made with Angular Universal + Node Back-end
+
+This is made based on Spotify Web Api Tutorial code. 
+
+NOTE! There are some bugs, which may or may not be removed in the future..
 
 
 ## Installation
